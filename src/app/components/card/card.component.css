@@ -1,0 +1,22 @@
+.card__container{
+	position: relative; /* usado para que os outros elementos se sobreponha sobre ele */
+	border: 3px solid #3e4357;
+	border-radius: 8px;
+	width: 350px;
+	height: 500px;
+
+	display: flex;
+	overflow: hidden; /* toda a parte da imagem que sair da caixa, será cortado / ficará escondido */
+	margin-top: 10px;
+}
+
+.card__img {
+	/* os dois "min" serve para que a imagem se estique para 100% independente do tamanho dela */
+	min-width: 100%;
+	min-height: 100%;
+	transition: transform .8s;
+}
+
+.card__img:hover {
+	transform: scale(1.1); /* efeito transform*/
+}
